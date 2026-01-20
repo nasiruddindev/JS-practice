@@ -5,7 +5,7 @@ let HC="I know";
 let HSC="completed"
 // let HSC="incompleted"
 let present=80;
-// let present=80%
+// let present=70
 
 
 if(computer=="have"){
