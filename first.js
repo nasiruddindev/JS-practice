@@ -1,30 +1,26 @@
-let computer="have";
-// let computer=" I don't have";
-let HC="I know";
-// let HC="I don't know";
-let HSC="completed"
-// let HSC="incompleted"
-let present=80;
-// let present=70
+let f = Number(prompt("Enter Your First Number"));
+let l = Number(prompt("Enter Your Last Number"));
+let r = Number(prompt("Enter Your Reject Number"));
+let num1 = 30;
+let num2 = 40;
+let num3 = 50;
 
-
-if(computer=="have"){
-  // console.log("pass");
-  if(HC=="I know"){
-    // console.log("2nd level pass");
-    if(HSC=="completed"){
-      // console.log("3rd level pass");
-      if(present==80){
-        console.log("well done");
-      }else{
-        console.log("try again  next time");
+for (i = f; i <= l; i++) {
+  if (i != r) {
+    console.log("====== ", i, " er namta start");
+    for (j = 1; j <= 10; j++) {
+      if (i * j != num1) {
+        if (i * j != num2) {
+          if (i * j != num3) {
+            console.log(i + " x ", j, " = ", i * j);
+          }
+        }
       }
-    }else{
-      console.log("complete first");
     }
-  }else{
-    console.log("finish first");
+    if (i < l) {
+      console.log("====== ", i, " er namta end");
+    } else {
+      console.log("all end");
+    }
   }
-}else{
-  console.log("buy a computer first");
 }
