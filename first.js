@@ -5,6 +5,8 @@ let num1 = 30;
 let num2 = 40;
 let num3 = 50;
 
+
+
 for (i = f; i <= l; i++) {
   if (i != r) {
     console.log("====== ", i, " er namta start");
