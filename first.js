@@ -1,25 +1,25 @@
-let n=Number(prompt("Enter Your First Number"));
-let m=Number(prompt("Enter Your last Number"));
-let r=Number(prompt("Enter Your Reject Number"))
-let r1=30;
-let r2=40;
-let r3=50;
+// let n=Number(prompt("Enter Your First Number"));
+// let m=Number(prompt("Enter Your last Number"));
+// let r=Number(prompt("Enter Your Reject Number"))
+// let r1=30;
+// let r2=40;
+// let r3=50;
 
-for(i=n;i<=m;i++){
-  if(i!=r  && r<m && r>n){
-    console.log(i," er namta start");
-    for(j=1;j<=10;j++){
-      if(i*j!=r1 && i*j!=r2 && i*j!=r3){
-        console.log(i+" x "+j+" = "+i*j);
-      }
-    }
-    if(i<m){
-    console.log(i," er namta end");
-  }else{
-    console.log("All End");
-  }
-  }
-}
+// for(i=n;i<=m;i++){
+//   if(i!=r  && r<m && r>n){
+//     console.log(i," er namta start");
+//     for(j=1;j<=10;j++){
+//       if(i*j!=r1 && i*j!=r2 && i*j!=r3){
+//         console.log(i+" x "+j+" = "+i*j);
+//       }
+//     }
+//     if(i<m){
+//     console.log(i," er namta end");
+//   }else{
+//     console.log("All End");
+//   }
+//   }
+// }
 
 
 
@@ -42,3 +42,23 @@ for(i=n;i<=m;i++){
 //   return a+b;
 // }
 // console.log(sum(3,));
+
+
+
+
+// Eventlistener 
+
+// let btn=document.querySelector("button");
+// let body=document.querySelector("body");
+
+// let mode="light"
+// btn.addEventListener("click",()=>{
+//   if(mode==="light"){
+//     mode="dark"
+//     body.style.backgroundColor="black"
+//   }else{
+//     mode="light"
+//     body.style.backgroundColor="white"
+//   }
+//   console.log(mode);
+// })
