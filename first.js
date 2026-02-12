@@ -46,7 +46,7 @@
 
 
 
-// Eventlistener 
+// Eventlistener
 
 // let btn=document.querySelector("button");
 // let body=document.querySelector("body");
@@ -62,3 +62,21 @@
 //   }
 //   console.log(mode);
 // })
+
+
+
+
+// HW
+
+let user =prompt("Enter a Latter");
+
+
+if(user>= 'A'  && user <='Z' ){
+
+  console.log("Capital :",user);
+
+}else if(user >='a' && user <='z'){
+
+  console.log("Small :",user);
+}
+
