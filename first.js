@@ -1,10 +1,34 @@
-let age=Number(prompt("Enter Your Age"));
-let salary=Number(prompt("Enter Your Salary"));
-let live=prompt("Where Do You Live").toUpperCase();
+let array=[23,5,95,98,49,98,40,498,497]
+
+
+// let arr=array.unshift(25)
+// console.log(array);
+// let arr=array.shift()
+// console.log(array);
+// let arr=array.splice(2,2,32,92)
+// console.log(array);
+// let arr=array.slice(3,4)
+// console.log(arr);
+// let arr=array.push(32);
+// console.log(array);
+// console.log(array.pop());
+// console.log(array.join(" # "));
+// console.log(array.at(2));
+// console.log(array.length);
+// console.log(array);
 
 
 
-age>=25 && age<=30?salary>=40000?live==="DHAKA"?console.log("You have passed all Requirment"):console.log("Bad luck"):console.log("Grow up your salary"):console.log("You are not able to marry");
+
+
+
+// let age=Number(prompt("Enter Your Age"));
+// let salary=Number(prompt("Enter Your Salary"));
+// let live=prompt("Where Do You Live").toUpperCase();
+
+
+
+// age>=25 && age<=30?salary>=40000?live==="DHAKA"?console.log("You have passed all Requirment"):console.log("Bad luck"):console.log("Grow up your salary"):console.log("You are not able to marry");
 
 
 
