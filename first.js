@@ -1,23 +1,61 @@
 let buttons=document.querySelectorAll("button")
-let heading=document.getElementById("heading")
+let cards=document.querySelectorAll(".card")
 
 
-buttons.forEach((button)=>{
+
+
+buttons.forEach((button) => {
   button.addEventListener("click",()=>{
 
+    // Sob card hide
 
-    let color=button.innerText.toLocaleLowerCase();
+    cards.forEach((card)=>{
+      card.style.display="none"
+    })
 
-    heading.className="";
+    let btn=button.classList[0];
 
-    if(heading.classList.contains(color)){
-      heading.classList.remove(color)
-    }else{
-      heading.classList.add(color)
+
+    if(btn==="messi"){
+      document.querySelector(".mess").style.display="block";
+    }else if(btn==="maria"){
+      document.querySelector(".mari").style.display="block";
+    }else if(btn==="allister"){
+      document.querySelector(".alliste").style.display="block";
+    }else if(btn==="de-paul"){
+      document.querySelector(".de-pau").style.display="block";
+    }else if(btn==="alvarez"){
+      document.querySelector(".alvare").style.display="block"
     }
 
   })
 })
+
+
+
+
+// Another one
+
+// let buttons=document.querySelectorAll("button")
+// let heading=document.getElementById("heading")
+
+
+// buttons.forEach((button)=>{
+//   button.addEventListener("click",()=>{
+
+
+//     let color=button.innerText.toLocaleLowerCase();
+
+//     heading.className="";
+
+//     if(heading.classList.contains(color)){
+//       heading.classList.remove(color)
+//     }else{
+//       heading.classList.add(color)
+//     }
+
+//   })
+// })
 
 
 
