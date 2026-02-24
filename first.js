@@ -1,4 +1,64 @@
-let array=[23,5,95,98,49,98,40,498,497]
+let buttons=document.querySelectorAll("button")
+let heading=document.getElementById("heading")
+
+
+buttons.forEach((button)=>{
+  button.addEventListener("click",()=>{
+
+
+    let color=button.innerText.toLocaleLowerCase();
+
+    heading.className="";
+
+    if(heading.classList.contains(color)){
+      heading.classList.remove(color)
+    }else{
+      heading.classList.add(color)
+    }
+
+  })
+})
+
+
+
+// buttons.forEach((button)=>{
+//   button.addEventListener("click",()=>{
+
+//     let color=button.innerText.toLocaleLowerCase();
+
+//     if(color==="blue"){
+//       heading.style.background="blue"
+//     }else if(color==="yellow"){
+//       heading.style.background="yellow"
+//       heading.style.color="black"
+//     }else{
+//       heading.style.color="white"
+//        if(color==="green"){
+//       heading.style.background="green"
+//     }else if(color==="teal"){
+//       heading.style.background="teal"
+//     }else if(color==="pink"){
+//       heading.style.background="pink"
+//       heading.style.color="black"
+//     }else{
+//       heading.style.color="white"
+//     }if(color==="black"){
+//       heading.style.background="black"
+//     }
+//     }
+//   })
+// })
+
+
+
+
+
+
+
+
+
+
+// let array=[23,5,95,98,49,98,40,498,497]
 
 
 // let arr=array.unshift(25)
@@ -18,7 +78,7 @@ let array=[23,5,95,98,49,98,40,498,497]
 // console.log(array);
 
 
-
+//another one
 
 
 
@@ -31,6 +91,8 @@ let array=[23,5,95,98,49,98,40,498,497]
 // age>=25 && age<=30?salary>=40000?live==="DHAKA"?console.log("You have passed all Requirment"):console.log("Bad luck"):console.log("Grow up your salary"):console.log("You are not able to marry");
 
 
+
+//another one
 
 // // HW
 
@@ -47,7 +109,7 @@ let array=[23,5,95,98,49,98,40,498,497]
 
 
 
-
+// another one
 
 // function vowel(str){
 //   let i=0;
@@ -63,7 +125,7 @@ let array=[23,5,95,98,49,98,40,498,497]
 
 
 
-
+// another one
 
 // let sum= (a=0,b=0)=>{
 //   return a+b;
@@ -73,7 +135,7 @@ let array=[23,5,95,98,49,98,40,498,497]
 
 
 
-
+// another one
 
 // let n=Number(prompt("Enter Your First Number"));
 // let m=Number(prompt("Enter Your last Number"));
@@ -100,7 +162,7 @@ let array=[23,5,95,98,49,98,40,498,497]
 
 
 
-
+// another one
 
 
 // Eventlistener

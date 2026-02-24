@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  color: white;
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+.buttons{
+  text-align: center;
+}
+button{
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+  color: black;
+}
+.green{
+  background-color: green;
+}
+.teal{
+  background-color: teal;
+}
+.black{
+  background-color: black;
+}
+.pink{
+  background-color: pink;
+  color: black;
+}
