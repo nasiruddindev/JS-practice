@@ -1,221 +1,87 @@
-let buttons=document.querySelectorAll("button")
-let cards=document.querySelectorAll(".card")
+let headingOne=document.querySelector(".headingOne")
+let inputOne=document.querySelector(".inputOne")
+let buttonOne=document.querySelector(".buttonOne")
+let errorOne=document.querySelector(".errorOne")
+let first=document.querySelector(".first")
 
 
+let headingTwo=document.querySelector(".headingTwo")
+let inputTwo=document.querySelector(".inputTwo")
+let buttonTwo=document.querySelector(".buttonTwo")
+let errorTwo=document.querySelector(".errorTwo")
+let sec=document.querySelector(".sec")
+let chanceTwo=document.querySelector(".chanceTwo")
 
 
-buttons.forEach((button) => {
-  button.addEventListener("click",()=>{
-
-    // Sob card hide
-
-    cards.forEach((card)=>{
-      card.style.display="none"
-    })
-
-    let btn=button.classList[0];
+let headingThree=document.querySelector(".headingThree")
+let inputThree=document.querySelector(".inputThree")
+let buttonThree=document.querySelector(".buttonThree")
+let errorThree=document.querySelector(".errorThree")
+let third=document.querySelector(".third")
+let chanceThree=document.querySelector(".chanceThree")
 
 
-    if(btn==="messi"){
-      document.querySelector(".mess").style.display="block";
-    }else if(btn==="maria"){
-      document.querySelector(".mari").style.display="block";
-    }else if(btn==="allister"){
-      document.querySelector(".alliste").style.display="block";
-    }else if(btn==="de-paul"){
-      document.querySelector(".de-pau").style.display="block";
-    }else if(btn==="alvarez"){
-      document.querySelector(".alvare").style.display="block"
-    }
+let count=3
+let secCount=2
 
-  })
+buttonOne.addEventListener("click",()=>{
+  if(!inputOne.value){
+    errorOne.innerHTML="Please Enter Something"
+  }else if(isNaN(inputOne.value)){
+    errorOne.innerHTML="Please Enter a Numner"
+  }else if(!(inputOne.value<=10 && inputOne.value>0)){
+    errorOne.innerHTML="please Enter a Numner between 1 to 10"
+  }else{
+    first.style.display="none"
+
+    sec.style.display="block"
+    chanceTwo.innerHTML=`Chance : ${count}`
+
+  }
 })
 
 
-
-
-// Another one
-
-// let buttons=document.querySelectorAll("button")
-// let heading=document.getElementById("heading")
-
-
-// buttons.forEach((button)=>{
-//   button.addEventListener("click",()=>{
-
-
-//     let color=button.innerText.toLocaleLowerCase();
-
-//     heading.className="";
-
-//     if(heading.classList.contains(color)){
-//       heading.classList.remove(color)
-//     }else{
-//       heading.classList.add(color)
-//     }
-
-//   })
-// })
-
-
-
-// buttons.forEach((button)=>{
-//   button.addEventListener("click",()=>{
-
-//     let color=button.innerText.toLocaleLowerCase();
-
-//     if(color==="blue"){
-//       heading.style.background="blue"
-//     }else if(color==="yellow"){
-//       heading.style.background="yellow"
-//       heading.style.color="black"
-//     }else{
-//       heading.style.color="white"
-//        if(color==="green"){
-//       heading.style.background="green"
-//     }else if(color==="teal"){
-//       heading.style.background="teal"
-//     }else if(color==="pink"){
-//       heading.style.background="pink"
-//       heading.style.color="black"
-//     }else{
-//       heading.style.color="white"
-//     }if(color==="black"){
-//       heading.style.background="black"
-//     }
-//     }
-//   })
-// })
-
-
-
-
-
-
-
-
-
-
-// let array=[23,5,95,98,49,98,40,498,497]
-
-
-// let arr=array.unshift(25)
-// console.log(array);
-// let arr=array.shift()
-// console.log(array);
-// let arr=array.splice(2,2,32,92)
-// console.log(array);
-// let arr=array.slice(3,4)
-// console.log(arr);
-// let arr=array.push(32);
-// console.log(array);
-// console.log(array.pop());
-// console.log(array.join(" # "));
-// console.log(array.at(2));
-// console.log(array.length);
-// console.log(array);
-
-
-//another one
-
-
-
-// let age=Number(prompt("Enter Your Age"));
-// let salary=Number(prompt("Enter Your Salary"));
-// let live=prompt("Where Do You Live").toUpperCase();
-
-
-
-// age>=25 && age<=30?salary>=40000?live==="DHAKA"?console.log("You have passed all Requirment"):console.log("Bad luck"):console.log("Grow up your salary"):console.log("You are not able to marry");
-
-
-
-//another one
-
-// // HW
-
-// let user = prompt('Enter a Latter')
-
-// if (user >= 'A' && user <= 'Z') {
-//   console.log('Capital :', user)
-// } else if (user >= 'a' && user <= 'z') {
-//   console.log('Small :', user)
-// } else {
-//   user = prompt('Enter a Number man')
-// }
-
-
-
-
-// another one
-
-// function vowel(str){
-//   let i=0;
-//   for(let char of str){
-//     if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"){
-//       i++;
-//     }
-//   }
-//   return i;
-// }
-// console.log(vowel("nasiruddin"));
-
-
-
-
-// another one
-
-// let sum= (a=0,b=0)=>{
-//   return a+b;
-// }
-// console.log(sum(3,));
-
-
-
-
-// another one
-
-// let n=Number(prompt("Enter Your First Number"));
-// let m=Number(prompt("Enter Your last Number"));
-// let r=Number(prompt("Enter Your Reject Number"))
-// let r1=30;
-// let r2=40;
-// let r3=50;
-
-// for(i=n;i<=m;i++){
-//   if(i!=r  && r<m && r>n){
-//     console.log(i," er namta start");
-//     for(j=1;j<=10;j++){
-//       if(i*j!=r1 && i*j!=r2 && i*j!=r3){
-//         console.log(i+" x "+j+" = "+i*j);
-//       }
-//     }
-//     if(i<m){
-//     console.log(i," er namta end");
-//   }else{
-//     console.log("All End");
-//   }
-//   }
-// }
-
-
-
-// another one
-
-
-// Eventlistener
-
-// let btn=document.querySelector("button");
-// let body=document.querySelector("body");
-
-// let mode="light"
-// btn.addEventListener("click",()=>{
-//   if(mode==="light"){
-//     mode="dark"
-//     body.style.backgroundColor="black"
-//   }else{
-//     mode="light"
-//     body.style.backgroundColor="white"
-//   }
-//   console.log(mode);
-// })
+buttonTwo.addEventListener("click",()=>{
+  if(!inputTwo.value){
+    errorTwo.innerHTML="Pleasr Enter Something"
+  }else if(isNaN(inputTwo.value)){
+    errorTwo.innerHTML="Please enter a Number"
+  }else if(!(inputTwo.value<=10 && inputTwo.value>0)){
+    errorTwo.innerHTML="Please enter a Number Between 1 to 10"
+  }else if(inputOne.value==inputTwo.value){
+    headingTwo.innerHTML="Player Two is Winner"
+    buttonTwo.style.display="none"
+    chanceTwo.style.display="none"
+  }else if(count>1){
+    count--;
+    chanceTwo.innerHTML=`Chance : ${count}`
+  }else{
+    sec.style.display="none"
+
+    third.style.display="block"
+    chanceThree.innerHTML=`Chance : ${secCount}`
+
+  }
+})
+
+
+buttonThree.addEventListener("click",()=>{
+  if(!inputThree.value){
+    errorThree.innerHTML="Please Enter Something"
+  }else if(isNaN(inputThree.value)){
+    errorThree.innerHTML="Please Enter a Number"
+  }else if(!(inputThree.value<=10 && inputThree.value>0)){
+    errorThree.innerHTML="Please Enter a Number Between 1 to 10"
+  }else if(inputOne.value==inputThree.value){
+    headingThree.innerHTML="Player Three is Winner"
+    buttonThree.style.display="none"
+    chanceThree.style.display="none"
+  }else if(secCount>1){
+    secCount--;
+    chanceThree.innerHTML=`Chance : ${secCount}`
+  }else{
+    chanceThree.style.display="none"
+    buttonThree.style.display="none"
+    headingThree.innerHTML="Player One is Winner"
+  }
+})
