@@ -21,16 +21,39 @@ let third=document.querySelector(".third")
 let chanceThree=document.querySelector(".chanceThree")
 
 
+
+let input=document.querySelector("input")
+let eyeIcon=document.querySelector("#eyeIcon")
+
+eyeIcon.addEventListener("click",()=>{
+  if(input.type=="password"){
+    input.type="text"
+    eyeIcon.classList.remove("fa-eye-slash")
+    eyeIcon.classList.add("fa-eye")
+  }else if(input.type="text"){
+    input.type="password"
+    console.log("input");
+    eyeIcon.classList.remove("fa-eye")
+    eyeIcon.classList.add("fa-eye-slash")
+  }
+})
+
+
+
 let count=3
 let secCount=2
 
 buttonOne.addEventListener("click",()=>{
-  if(!inputOne.value){
+
+  let input1=Number(inputOne.value)
+
+
+  if(!input1){
     errorOne.innerHTML="Please Enter Something"
-  }else if(isNaN(inputOne.value)){
-    errorOne.innerHTML="Please Enter a Numner"
-  }else if(!(inputOne.value<=10 && inputOne.value>0)){
-    errorOne.innerHTML="please Enter a Numner between 1 to 10"
+  }else if(isNaN(input1)){
+    errorOne.innerHTML="Please Enter a Number"
+  }else if(!(input1<=10 && input1>0)){
+    errorOne.innerHTML="please Enter a Number between 1 to 10"
   }else{
     first.style.display="none"
 
@@ -42,13 +65,17 @@ buttonOne.addEventListener("click",()=>{
 
 
 buttonTwo.addEventListener("click",()=>{
-  if(!inputTwo.value){
+
+  let input2=Number(inputTwo.value)
+
+
+  if(!input2){
     errorTwo.innerHTML="Pleasr Enter Something"
-  }else if(isNaN(inputTwo.value)){
+  }else if(isNaN(input2)){
     errorTwo.innerHTML="Please enter a Number"
-  }else if(!(inputTwo.value<=10 && inputTwo.value>0)){
+  }else if(!(input2<=10 && input2>0)){
     errorTwo.innerHTML="Please enter a Number Between 1 to 10"
-  }else if(inputOne.value==inputTwo.value){
+  }else if(inputOne.value==input2){
     headingTwo.innerHTML="Player Two is Winner"
     buttonTwo.style.display="none"
     chanceTwo.style.display="none"
@@ -66,13 +93,16 @@ buttonTwo.addEventListener("click",()=>{
 
 
 buttonThree.addEventListener("click",()=>{
-  if(!inputThree.value){
+
+  let input3=Number(inputThree.value)
+
+  if(!input3){
     errorThree.innerHTML="Please Enter Something"
-  }else if(isNaN(inputThree.value)){
+  }else if(isNaN(input3)){
     errorThree.innerHTML="Please Enter a Number"
-  }else if(!(inputThree.value<=10 && inputThree.value>0)){
+  }else if(!(input3<=10 && input3>0)){
     errorThree.innerHTML="Please Enter a Number Between 1 to 10"
-  }else if(inputOne.value==inputThree.value){
+  }else if(inputOne.value==input3){
     headingThree.innerHTML="Player Three is Winner"
     buttonThree.style.display="none"
     chanceThree.style.display="none"
