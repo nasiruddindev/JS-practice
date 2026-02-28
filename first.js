@@ -23,19 +23,20 @@ let chanceThree=document.querySelector(".chanceThree")
 
 
 let input=document.querySelector("input")
-let eyeIcon=document.querySelector("#eyeIcon")
+let eyeIcon=document.querySelectorAll(".eyeIcon")
 
-eyeIcon.addEventListener("click",()=>{
-  if(input.type=="password"){
-    input.type="text"
-    eyeIcon.classList.remove("fa-eye-slash")
-    eyeIcon.classList.add("fa-eye")
-  }else if(input.type="text"){
-    input.type="password"
-    console.log("input");
-    eyeIcon.classList.remove("fa-eye")
-    eyeIcon.classList.add("fa-eye-slash")
-  }
+eyeIcon.forEach((icon)=>{
+  icon.addEventListener("click",()=>{
+    if(input.type=="password"){
+      input.type="text"
+      icon.classList.remove("fa-eye-slash")
+      icon.classList.add("fa-eye")
+    }else if(input.type=="text"){
+      input.type="password"
+      icon.classList.remove("fa-eye")
+      icon.classList.add("fa-eye-slash")
+    }
+  })
 })
 
 

@@ -43,7 +43,7 @@ input{
   font-size: 20px;
   outline: 0;
 }
-#eyeIcon{
+.eyeIcon{
   width: 30px;
   cursor: pointer;
   color: rgba(255, 0, 25, 0.899);
